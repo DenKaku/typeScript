@@ -240,20 +240,20 @@ const DrawGraphComponent:React.FunctionComponent<{}> = (props) => {
 
         setStageScale(newScale)
 
-        var newPos = {
-          x:
-            -(mousePointTo.x - stage.getPointerPosition().x / newScale) *
-            newScale,
-          y:
-            -(mousePointTo.y - stage.getPointerPosition().y / newScale) *
-            newScale
-        };
+        // var newPos = {
+        //   x:
+        //     -(mousePointTo.x - stage.getPointerPosition().x / newScale) *
+        //     newScale,
+        //   y:
+        //     -(mousePointTo.y - stage.getPointerPosition().y / newScale) *
+        //     newScale
+        // };
 
         setX(-(mousePointTo.x - stage.getPointerPosition().x / newScale) * newScale)
         setY(-(mousePointTo.y - stage.getPointerPosition().y / newScale) * newScale)
 
-        stage.position(newPos);
-        stage.batchDraw();
+        // stage.position(newPos);
+        // stage.batchDraw();
     }
 
     const p = {
